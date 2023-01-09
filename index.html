@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My Agency</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="p-5 md:p-10 text-gray-800">
+  <!-- Home -->
+  <section class="bg-purple-100 rounded-2xl p-5 mb-10">
+    <div class="container mx-auto">
+      <div class="flex">
+        <a class="text-3xl font-bold pr-5 border-r mr-5 border-purple-300" href="index.html">My Agency</a>
+        <div class="my-auto">
+          <button class="lg:hidden" onclick="menuClick()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </button>
+          <ul class="hidden lg:flex font-bold text-gray-600">
+            <li class="pr-5"><a class="px-3 py-2 border border-purple-100 hover:border-purple-300 rounded"
+                href="">Home</a>
+            </li>
+            <li class="pr-5"><a class="px-3 py-2 border border-purple-100 hover:border-purple-300 rounded"
+                href="">Services</a>
+            </li>
+            <li class="pr-5"><a class="px-3 py-2 border border-purple-100 hover:border-purple-300 rounded"
+                href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <a href="" class="flex ml-auto text-medium font-bold bg-red-500 text-white px-3 py-2 rounded">
+          <span class="pr-1 hidden lg:block">
+            Get a Quote
+          </span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+          </svg></a>
+      </div>
+      <div class="hidden" id="mobileMenu">
+        <ul class="lg:hidden font-bold text-gray-600">
+          <li class="mt-1"><a class="py-2" href="">Home</a>
+          </li>
+          <li class="mt-1"><a class="py-2" href="">Services</a>
+          </li>
+          <li class="mt-1"><a class="py-2" href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex py-12 lg:py-36">
+        <div class="w-full lg:w-1/2">
+          <h2 class="text-center lg:text-left text-3xl lg:text-7xl font-bold lg:font-semibold">
+            World class design for your Products.
+          </h2>
+          <p class="text-center lg:text-left mt-4 lg:mt-8 text-2xl text-gray-600">
+            Lets bring life to your brand.
+          </p>
+          <div class="flex mt-12 justify-center lg:justify-start">
+            <a class="rounded mr-5 text-lg bg-purple-600 text-white px-3 py-2" href="">Services</a>
+            <a class="rounded mr-5 text-lg bg-red-600 text-white px-3 py-2" href="">Contact Us</a>
+          </div>
+        </div>
+        <div class="w-1/2 hidden lg:flex">
+          <img src="./images/hero2.svg" alt="">
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+        </svg>
+        <span class="ml-2">
+          Scroll Down
+        </span>
+      </div>
+    </div>
+  </section>
+  <!-- Services -->
+  <section class="bg-red-100 rounded-2xl p-5 mb-10">
+    <div class="container mx-auto">
+      <div class="py-16 lg:py-28">
+        <h2 class="text-center text-3xl lg:text-5xl font-bold">
+          Our Services
+        </h2>
+        <p class="lg:w-1/2 text-center mx-auto mt-5">
+          We not only design logos and websites but they can also brand your business, create marketing materials for 
+          your brand and develop strategies that can attract clients!!
+        </p>
+      </div>
+      <div class="flex flex-wrap pb-16 pb-28 justify-center">
+        <div class="w-full lg:w-1/2 xl:w-1/3 py-5 lg:p-5">
+          <div class="bg-white p-10 rounded-2xl shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mb-12 text-blue-600" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+            <h3 class="text-2xl font-bold text-gray-700">Design</h3>
+            <p class="mt-3">
+              Service design is the activity of planning and organizing a business's resources (people, props, and processes) in order
+               to (1) directly improve the employee's experience, and (2) indirectly, the customer's experience
+            </p>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 xl:w-1/3 py-5 lg:p-5">
+          <div class="bg-white p-10 rounded-2xl shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mb-12 text-red-600" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+            <h3 class="text-2xl font-bold text-gray-700">Development</h3>
+            <p class="mt-3">
+              What is service design and development?
+Service Design is a human-centred approach that focuses on customer experience and the quality of service encounter as the key value for success. Service Design 
+is a holistic approach, which considers in an integrated way strategic, system, process and touchpoint design decisions.
+            </p>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 xl:w-1/3 py-5 lg:p-5">
+          <div class="bg-white p-10 rounded-2xl shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mb-12 text-green-600" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <h3 class="text-2xl font-bold text-gray-700">Digital Marketing</h3>
+            <p class="mt-3">
+              Digital marketing, also called online marketing, is the promotion of brands to connect with potential customers using the internet and other forms of digital communication. 
+              This includes not only email, social media, and web-based advertising, but also text and multimedia messages as a marketing channel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Us -->
+  <section class="bg-red-100 rounded-2xl p-5 mb-10">
+    <div class="container mx-auto">
+      <div class="py-16 lg:py-28">
+        <h2 class="text-center text-3xl lg:text-5xl font-bold">
+          Contact Us
+        </h2>
+        <p class="lg:w-1/2 text-center mx-auto mt-5">
+          A contact page provides guidance for existing customers and offers an overview of your brand for new visitors.
+        </p>
+      </div>
+      <div class="mb-28 lg:w-1/2 mx-auto">
+        <form action="">
+          <div class="flex border bg-white p-2 rounded focus-within:border-purple-500">
+            <div class="w-auto flex px-2 text-gray-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="my-auto h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+            </div>
+            <div class="w-full">
+              <span class="block text-gray-300">Enter your Name</span>
+              <input class="w-full p-1 focus:outline-none border-b" type="text">
+            </div>
+          </div>
+          <div class="flex mt-3 border bg-white p-2 rounded focus-within:border-purple-500">
+            <div class="w-auto flex px-2 text-gray-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="my-auto h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+              </svg>
+            </div>
+            <div class="w-full">
+              <span class="block text-gray-300">Enter your Email</span>
+              <input class="w-full p-1 focus:outline-none border-b" type="text">
+            </div>
+          </div>
+          <div class="flex mt-3 border bg-white p-2 rounded focus-within:border-purple-500">
+            <div class="w-auto flex px-2 text-gray-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="my-auto h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div class="w-full">
+              <span class="block text-gray-300">Choose One</span>
+              <select class="w-full p-1 focus:outline-none border-b" name="" id="">
+                <option value="Design">Design</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="SEO">SEO</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex mt-3 border bg-white p-2 rounded focus-within:border-purple-500">
+            <div class="w-auto flex px-2 text-gray-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="my-auto h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div class="w-full">
+              <span class="block text-gray-300">Enter your Message</span>
+              <textarea class="w-full p-1 focus:outline-none border-b" rows="" cols=""></textarea>
+            </div>
+          </div>
+          <div class="mt-5">
+            <button class="w-full md:w-auto block mt-3 font-semibold text-white bg-purple-500 rounded px-3 py-2">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white rounded-2xl p-5 bg-gray-800">
+    <div class="flex flex-wrap py-12">
+      <div class="p-5 lg:p-10 w-full md:w-1/3">
+        <h2 class="font-extrabold text-2xl">Agency</h2>
+        <p class="text-gray-400 mt-3">
+          design agency is a creative firm focused on how brands look, sound and feel, in order to make products and services more enticing to 
+          consumers. For us, it's more of a 'why'. Creative design is the key. Our design process is driven by one thing: the visual solution.
+        </p>
+      </div>
+      <div class="p-5 lg:p-10 w-full md:w-1/3">
+        <h2 class="font-extrabold text-xl">Address</h2>
+        <p class="text-gray-400 mt-3">
+          Street:  65 Devi Smith House, K M Sharma Marg, Kalbadevi<br />
+          City:   Mumbai<br />
+          State/province/area:    Maharashtra<br />
+          Country:  India<br />
+          Pin-400002
+        </p>
+      </div>
+      <div class="p-5 lg:p-10 w-full md:w-1/3">
+        <h2 class="font-extrabold text-xl">Inquiries</h2>
+        <p class="text-gray-400 mt-3">
+          <a href="tel:+91000000000">+91-9361397474</a>
+          <br />
+          <a href="mailto:contact@gmail.com">contact@gmail.com</a>
+        </p>
+        <ul class="flex mt-4">
+          <li class="p-2 bg-white shadow rounded  mx-1">
+            <a class="text-gray-500" href="">
+              <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+              </svg>
+            </a>
+          </li>
+          <li class="p-2 bg-white shadow rounded  mx-1">
+            <a class="text-gray-500" href="">
+              <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24">
+                <path
+                  d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z" />
+              </svg>
+            </a>
+          </li>
+          
+          <li class="p-2 bg-white shadow rounded  mx-1">
+            <a class="text-gray-500" href="">
+              <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-gray-500 border-t border-gray-500 pt-3">
+      All Rights Reserved
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
