@@ -4,7 +4,7 @@
 
 + It is a website designed for the design agency.
 
-+ This website includes three sections namely
++ This website includes various sections namely
 
    * Home
    * Services
